@@ -1,0 +1,99 @@
+/*
+*OVERVIEW
+*
+*This project is separeted to the following style sheets:
+*
+*Normalize.min.css.....This is the css reset, that's way the browsers start
+from the same standing.
+*Basic.css.............The global CSS rules.
+*Layout.css............The CSS rules of the layout and the different screen.
+*Component.css.........The CSS rules for the components that build up the page.
+*/
+
+
+/*
+*CONTENTS
+*
+*Variables............Globally available variable.
+*
+*General styles.......General styles for the whole page.
+  -- 1, the global default of the page, a more meaningful box-sizing model
+  -- 2, the default base-font value to which all rem units are relative
+  -- 3, the normalise.css sets a top and a bottom margin for these items,
+        this rule overrides this
+  -- 4, this rule ensures that the horizontal margins are the same throughout
+        the page, this can be overwritten later if necessary
+*
+*Typographi..........Global rules for typographic styles of content, headings,
+links and buttons.
+*/
+
+
+
+
+/* ==========================
+   VARIABLES
+   ========================== */
+
+:root {
+  --primary-bg-color:        rgba(244,243,245,1);  /* light-gray */
+  --secondary-bg-color:      rgba(255,255,255,1);  /* white */
+  --dark-ctn-color:          rgba(33,17,56,1);    /* dark-blue */
+  --light-ctn-color:         rgba(98,0,234,1);    /* king-blue */
+  --btn-text-color:          rgba(178,172,186,1);  /* gray */
+}
+
+
+
+
+
+/* ==========================
+   GENERAL STYLES
+   ========================== */    
+
+* {
+  box-sizing:                border-box; /* 1, */
+}
+
+
+html {
+  font-size:                 14px; /* 2, */
+}
+
+
+h2, h6
+p,
+ul {
+  margin:                    0; /* 3, */
+}
+
+
+h2, h6,
+p {
+  margin-bottom:             1.071rem; /* 4, */
+}
+
+
+a {
+  text-decoration:           none;
+  cursor:                    pointer;
+}
+
+
+
+
+
+/* ==========================
+   TYPOGRAPHY
+   ========================== */
+
+body {
+  font-family:               'Montserrat', sans-serif;
+  color:                     var(--dark-ctn-color);
+  background-color:          var(--primary-bg-color);
+}
+
+
+h2 {
+  font-size:                 2.857rem;
+}
